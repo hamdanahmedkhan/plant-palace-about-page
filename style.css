@@ -1,0 +1,320 @@
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+    
+*{
+    font-family: "Poppins", sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+.carousel-item img {
+    width: 100%;
+    height: 80vh;
+}
+.navbar-center {
+    justify-content: center;
+}
+h2,h4,p{
+    font-weight: 900;
+}
+h5,h6,a,p{
+    font-weight: 300;
+}
+:root{
+    --colorOne: #19456b;
+    --colorTwo: #16c79a;
+}
+.center-vertical{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items:center ;
+}
+.about-us-section{
+     width: 100%;
+    padding: calc(5% + 30px) 0px;
+}
+.about-us-section .img-head{
+    position: relative;
+    overflow: hidden;
+}
+.about-us-section .img-head img{
+    width: 100%;
+    transition: transform .3s;
+}
+.about-us-section .img-head:hover img{
+    transform: scale(1.2);
+}
+.about-us-section .img-head::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(to right bottom, var(--colorOne), var(--colorTwo)); */
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .5;
+}
+.about-us-section .text-head{
+    font-size: 28px;
+    color: var(--colorTwo);
+}
+.about-us-section .break-small{
+    width: 80px;
+    height: 3px;
+    background-color: var(--colorTwo);
+}
+.about-us-section .text-para{
+    font-size: 16px;
+    color: #444;
+}
+.about-us-section .box{
+    background-color: var(--colorTwo);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px;
+    position: relative;
+    overflow: hidden;
+}
+.about-us-section .box i{
+    font-size: 42px;
+}
+.about-us-section .box h4{
+    font-size: 14px;
+}
+.about-us-section .box p{
+    font-size: 22px;
+}
+.about-us-section .box::after,
+.about-us-section .box::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #fff5;
+    border-radius: 50%;
+    transition: transform .3s;
+}
+.about-us-section .box::after{
+    left: -50px;
+    top: -50px;
+}
+.about-us-section .box::before{
+    right: -50px;
+    bottom: -50px;
+}
+.about-us-section .box:hover:after,
+.about-us-section .box:hover:before{
+    transform: scale(1.2);
+
+    /* Why Choose Us Section Start*/
+
+
+}.why-choose-section {
+    padding: 7rem 0; }
+    .why-choose-section .img-wrap {
+      position: relative; }
+      .why-choose-section .img-wrap:before {
+        position: absolute;
+        content: "";
+        width: 255px;
+        height: 217px;
+        background-image: url("./Img/dots-green.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        -webkit-transform: translate(-40%, -40%);
+        -ms-transform: translate(-40%, -40%);
+        transform: translate(-40%, -40%);
+        z-index: -1; }
+      .why-choose-section .img-wrap img {
+        border-radius: 20px; }
+  
+  .feature {
+    margin-bottom: 30px; }
+    .feature .icon {
+      display: inline-block;
+      position: relative;
+      margin-bottom: 20px; }
+      .feature .icon:before {
+        content: "";
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        background: rgba(59, 93, 80, 0.2);
+        border-radius: 50%;
+        right: -8px;
+        bottom: 0; }
+    .feature h3 {
+      font-size: 14px;
+      color: #2f2f2f; }
+    .feature p {
+      font-size: 14px;
+      line-height: 22px;
+      color: #6a6a6a; }
+  
+  .we-help-section {
+    padding: 7rem 0; }
+    .we-help-section .imgs-grid {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr)(270);
+      grid-template-columns: repeat(27, 1fr);
+      position: relative; }
+      .we-help-section .imgs-grid:before {
+        position: absolute;
+        content: "";
+        width: 255px;
+        height: 217px;
+        background-image: url("./Img/claude-monets-house-and-gardens-in-giverny-france-news-photo-1042013294-1562610151.avif");
+        background-size: contain;
+        background-repeat: no-repeat;
+        -webkit-transform: translate(-40%, -40%);
+        -ms-transform: translate(-40%, -40%);
+        transform: translate(-40%, -40%);
+        z-index: -1; }
+      .we-help-section .imgs-grid .grid {
+        position: relative; }
+        .we-help-section .imgs-grid .grid img {
+          border-radius: 20px;
+          max-width: 100%; }
+        .we-help-section .imgs-grid .grid.grid-1 {
+          -ms-grid-column: 1;
+          -ms-grid-column-span: 18;
+          grid-column: 1 / span 18;
+          -ms-grid-row: 1;
+          -ms-grid-row-span: 27;
+          grid-row: 1 / span 27; }
+        .we-help-section .imgs-grid .grid.grid-2 {
+          -ms-grid-column: 19;
+          -ms-grid-column-span: 27;
+          grid-column: 19 / span 27;
+          -ms-grid-row: 1;
+          -ms-grid-row-span: 5;
+          grid-row: 1 / span 5;
+          padding-left: 20px; }
+        .we-help-section .imgs-grid .grid.grid-3 {
+          -ms-grid-column: 14;
+          -ms-grid-column-span: 16;
+          grid-column: 14 / span 16;
+          -ms-grid-row: 6;
+          -ms-grid-row-span: 27;
+          grid-row: 6 / span 27;
+          padding-top: 20px; }
+          /* Why Choose Us Section End*/
+
+/*** Team Start ***/
+.team .team-item {
+    position: relative;
+    padding: 0 25px 25px 25px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.team .team-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: #e6fff8; /* Light green background */
+    border-radius: 10px;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.team .team-item:hover::before {
+    height: 0;
+}
+
+.team .team-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.team .team-item:hover::after {
+    height: 100%;
+    background: #16c79a; /* Green background */
+}
+
+.team .team-item .team-img {
+    width: 100%; 
+    height: 100%;
+    border-radius: 100%;
+    position: relative;
+    margin-top: 50%;
+    transform: translateY(-50%);
+    margin-bottom: -50%;
+    display: flex;
+    justify-content: center;
+    border: 4px solid #16c79a; /* Green border */
+    border-style: dotted;
+    padding: 4px;
+    background: #ffffff; /* White background */
+    transition: 0.5s;
+}
+
+.team .team-item:hover .team-img {
+    border: 4px solid #ffffff; /* White border */
+    border-style: dotted;
+    background: 0;
+}
+
+.team .team-item .team-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+.team .team-item .team-title {
+    padding: 25px 0 25px 0;
+    text-align: center;
+}
+
+.team .team-item .team-title h4,
+.team .team-item .team-title p {
+    transition: 0.5s;
+}
+
+.team .team-item:hover .team-title h4,
+.team .team-item:hover .team-title p {
+    color: #ffffff; /* White text */
+}
+
+.team .team-item .team-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.team .team-item .team-icon a {
+    transition: 0.5s;
+}
+
+.team .team-item:hover .team-icon a {
+    color: #16c79a; /* Green text */
+    background: #ffffff; /* White background */
+}
+
+.team .team-item:hover .team-icon a:hover {
+    color: #ffffff; /* White text */
+    background: #16c79a; /* Green background */
+}
+/*** Team End ***/
+
+
+
